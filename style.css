@@ -22,73 +22,18 @@ body {
     background-repeat: repeat;
 }
 
-.page-title {
-    font-size: 30px;
-    line-height: 42px;
+.main-header {
+    margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+    margin-bottom: 50px;
+  
+    background-color: #000000;
 }
 
 a {
   text-decoration: none;
-}
-
-.main-nav {
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    
-    background-color: #000000;    
-}
-
-.site-nav, 
-.user-nav {
-    list-style: none;
-}
-
-.site-nav a,
-.user-nav a {
-    color: #ffffff;
-}
-
-.site-nav a:hover,
-.site-nav a:focus,
-.user-nav a:hover, 
-.user-nav a:focus {
-    background-color: #242424;
-} 
-
-.features-list {
-    list-style: none;
-}
-
-.feature-item {
-    text-align: center;
-}
-    
-.feature-item h3 {   
-    font-size: 30px;
-    line-height: 42px;
-}
-
-.index-columns {
-    color: #000000;
-    
-    background-color: #f8f5f2;
-    background-image: url("img/backgroundwhite.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-
-.news-list {
-    list-style: none;
-}
-
-.news-item time {
-    text-transform: none;
-}
-
-.gallery-content {
-    border: 7px solid #ffffff;
-    background-color: #e5e5e5;
 }
 
 .btn {
@@ -109,6 +54,157 @@ a {
     background-color: #663d15;
 }
 
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    
+    background-color: transparent;    
+}
+
+.inner-page .main-nav {
+    align-items: flex-start;
+    flex-direction: row;    
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.inner-page .main-header-logo {
+    order: 0;
+    
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+}
+
+.main-nav-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    
+    background-color: #000000;
+}
+
+.main-nav-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav, 
+.user-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    width: 620px;
+}
+
+.user-nav {
+    width: 140px;
+}
+
+.inner-page .user-nav {
+    margin-left: auto;
+}
+
+.site-nav a,
+.user-nav a {
+    color: #ffffff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover, 
+.user-nav a:focus {
+    background-color: #242424;
+} 
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.feature-item {
+    width: 300px;
+    text-align: center;
+}
+    
+.feature-item h3 {   
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding: 50px 80px;
+    
+    color: #000000;
+    
+    background-color: #f8f5f2;
+    background-image: url("img/backgroundwhite.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news {
+    width: 380px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.gallery-content {
+    border: 7px solid #ffffff;
+    background-color: #e5e5e5;
+}
+
+.contacts {
+    width: 380px;    
+}
+
+.appoitments {
+    width: 300px;
+}
+
 .appoitment-item input {
     font: inherit;
     
@@ -120,7 +216,20 @@ a {
     border-color: #663d15;
 }
 
+.page-title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    
+    font-size: 30px;
+    line-height: 42px;
+}
+
 .breadcrumbs {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    
     list-style: none;
 }
 
@@ -135,6 +244,10 @@ a {
 
 .breadcrumbs-current {
     color: #aba9a7;
+}
+
+.filters {
+    width: 180px;
 }
 
 .filter fieldset {
@@ -157,25 +270,46 @@ a {
 }
 
 .filter-input:disabled + label {
-  color: #000000;
+    color: #000000;
 
-  opacity: 0.5;
+    opacity: 0.5;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    
     list-style: none;
 }
 
 .catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  
     background-color: #f8f8f8;
-    
     box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-    
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .catalog-item:hover {
     box-shadow: 5px 5px 25px rgba(0, 1, 1, 0.35);
-    
 }
 
 .catalog-item a {
@@ -186,6 +320,7 @@ a {
     font-size: 14px;
     line-height: 18px;    
 }
+
 .catalog-item-type {
     text-transform: none
 }
@@ -204,6 +339,9 @@ a {
 }
 
 .pagination-list{
+    margin: 0;
+    padding: 0;
+    
     list-style: none;
 }
 
@@ -235,6 +373,10 @@ a {
     list-style: none;
 }
 
+.product-photos {
+    width: 460px;
+}
+
 .product-photo-full {
     box-shadow: 0 0 15px rgba(0,1,1,0.2);
 }
@@ -254,6 +396,10 @@ a {
     line-height: 20px;
 }
 
+.product-info {
+    width: 390px;
+}
+ 
 .product-info h3 {
     font-size: 24px;
     line-height: 30px;
@@ -264,12 +410,29 @@ a {
 }
 
 .main-footer {
+    margin-top: 65px;
+    padding: 60px;
+    
     color: #ffffff;
     
     background-color: #222222;
     background-image: url("img/backgrounddark.jpg");
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+      margin-top: 45px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
 }
 
 .footer-contacts a{
@@ -283,6 +446,8 @@ a {
 }
 
 .footer-social {
+    width: 145px;
+    
     text-align: center;
 }
 
@@ -296,6 +461,9 @@ a {
 }
 
 .footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
     text-align: center;
 }
 
@@ -349,3 +517,14 @@ a {
 .restore:focus {
     text-decoration: none;
 }
+
+/**************************Сеточные стили**************************/
+
+
+
+
+
+
+
+
+
